@@ -15,7 +15,7 @@
 """Attributes for android_application."""
 
 load(
-    "@rules_android//rules:attrs.bzl",
+    "@build_bazel_rules_android//rules:attrs.bzl",
     _attrs = "attrs",
 )
 

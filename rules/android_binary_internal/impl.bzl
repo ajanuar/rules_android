@@ -14,15 +14,15 @@
 
 """Implementation."""
 
-load("@rules_android//rules:acls.bzl", "acls")
-load("@rules_android//rules:java.bzl", "java")
+load("@build_bazel_rules_android//rules:acls.bzl", "acls")
+load("@build_bazel_rules_android//rules:java.bzl", "java")
 load(
-    "@rules_android//rules:processing_pipeline.bzl",
+    "@build_bazel_rules_android//rules:processing_pipeline.bzl",
     "ProviderInfo",
     "processing_pipeline",
 )
-load("@rules_android//rules:resources.bzl", _resources = "resources")
-load("@rules_android//rules:utils.bzl", "compilation_mode", "get_android_toolchain", "utils")
+load("@build_bazel_rules_android//rules:resources.bzl", _resources = "resources")
+load("@build_bazel_rules_android//rules:utils.bzl", "compilation_mode", "get_android_toolchain", "utils")
 
 def _process_resources(ctx, java_package, **unused_ctxs):
     packaged_resources_ctx = _resources.package(

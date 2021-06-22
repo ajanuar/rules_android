@@ -15,7 +15,7 @@
 """Attributes."""
 
 load(
-    "@rules_android//rules:attrs.bzl",
+    "@build_bazel_rules_android//rules:attrs.bzl",
     _attrs = "attrs",
 )
 
@@ -64,7 +64,7 @@ ATTRS = _attrs.add(
         # TODO(str): Remove when fully migrated to android_instrumentation_test
         _android_test_migration = attr.bool(default = False),
         _flags = attr.label(
-            default = "@rules_android//rules/flags",
+            default = "@build_bazel_rules_android//rules/flags",
         ),
     ),
     _attrs.COMPILATION,

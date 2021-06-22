@@ -79,7 +79,7 @@ _tristate = struct(
 _JAVA_RUNTIME = dict(
     _host_javabase = attr.label(
         cfg = "host",
-        default = Label("@rules_android//tools/jdk:current_java_runtime"),
+        default = Label("@build_bazel_rules_android//tools/jdk:current_java_runtime"),
     ),
 )
 
@@ -151,7 +151,7 @@ _DATA_CONTEXT = _add(
         # TODO(b/145617058) Switching back to head RPBB until the Android rules release process is improved
         _android_resources_busybox = attr.label(
             cfg = "host",
-            default = Label("@rules_android//rules:ResourceProcessorBusyBox"),
+            default = Label("@build_bazel_rules_android//rules:ResourceProcessorBusyBox"),
             executable = True,
         ),
         _xsltproc_tool = attr.label(

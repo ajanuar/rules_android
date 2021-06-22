@@ -22,11 +22,11 @@ load(
     _android_feature_module_macro = "android_feature_module_macro",
 )
 load(
-    "@rules_android//rules:android_binary.bzl",
+    "@build_bazel_rules_android//rules:android_binary.bzl",
     _android_binary = "android_binary",
 )
 load(
-    "@rules_android//rules/android_library:rule.bzl",
+    "@build_bazel_rules_android//rules/android_library:rule.bzl",
     _android_library_macro = "android_library_macro",
 )
 

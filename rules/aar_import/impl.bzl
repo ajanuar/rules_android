@@ -15,25 +15,25 @@
 """Implementation."""
 
 load(
-    "@rules_android//rules:acls.bzl",
+    "@build_bazel_rules_android//rules:acls.bzl",
     _acls = "acls",
 )
 load(
-    "@rules_android//rules:common.bzl",
+    "@build_bazel_rules_android//rules:common.bzl",
     _common = "common",
 )
-load("@rules_android//rules:intellij.bzl", "intellij")
+load("@build_bazel_rules_android//rules:intellij.bzl", "intellij")
 load(
-    "@rules_android//rules:java.bzl",
+    "@build_bazel_rules_android//rules:java.bzl",
     _java = "java",
 )
-load("@rules_android//rules:providers.bzl", "AndroidLintRulesInfo")
+load("@build_bazel_rules_android//rules:providers.bzl", "AndroidLintRulesInfo")
 load(
-    "@rules_android//rules:resources.bzl",
+    "@build_bazel_rules_android//rules:resources.bzl",
     _resources = "resources",
 )
 load(
-    "@rules_android//rules:utils.bzl",
+    "@build_bazel_rules_android//rules:utils.bzl",
     _get_android_toolchain = "get_android_toolchain",
     _utils = "utils",
 )

@@ -27,6 +27,6 @@ sh_binary(
 java_binary(
     name = "bundletool",
     main_class = "com.android.tools.build.bundletool.BundleToolMain",
-    runtime_deps = ["@rules_android_maven//:com_android_tools_build_bundletool"],
+    runtime_deps = ["@build_bazel_rules_android_maven//:com_android_tools_build_bundletool"],
     visibility = ["//visibility:public"],
 )
